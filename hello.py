@@ -1,16 +1,11 @@
-
 def func():
+    """    
     """
-    
-    """
-    
     inps = int(input())
     for _ in range(inps):
         n = int(input())
-        pass
-
-
-func()        
+        
+func()
 
  
 # array = list(map(int, input().split()))

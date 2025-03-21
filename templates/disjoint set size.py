@@ -17,16 +17,13 @@ class DisjointSetSize:
         pu = self.find_parent(u)
         pv = self.find_parent(v)
 
-        if self.size[pu] > self.size[pv]:
+        if self.size[pu] >= self.size[pv]:
             self.parent[pv] = pu
             self.size[pu] += self.size[pv]
-        elif self.size[pv] > self.size[pu]:
+        else:
             self.parent[pu] = pv
             self.size[pv] += self.size[pu]
-        else:
-            self.parent[pv] = pu
-            self.size[pu] += self.size[pv]
-
+        
     def is_same(self, u, v):
         pu = self.find_parent(u)
         pv = self.find_parent(v)
