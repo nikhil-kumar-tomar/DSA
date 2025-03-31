@@ -39,6 +39,6 @@ for edge in edges:
 
 print(disjointsetsize.parent)
 print(disjointsetsize.size)
-disjointsetsize.is_same(1, 3) # On deman path compression happening here
+disjointsetsize.is_same(1, 3) # On demand path compression happening here
 print(disjointsetsize.parent)
 print(disjointsetsize.size)

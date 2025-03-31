@@ -4,7 +4,9 @@ def func():
     inps = int(input())
     for _ in range(inps):
         n = int(input())
-        
+        array = list(map(int, input().split()))
+
+        can_do = set()
 func()
 
  
